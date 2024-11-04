@@ -69,7 +69,27 @@ padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.section-imgtxt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+}
+
+.section-imgtxt-txt {
+    max-width: 1000px;
+    min-width: 500px;
+    text-align: left;
+}
+
+.section-imgtxt-img {
+    max-width: 500px;
+    min-width: 1000px;
 }
 
 @media (min-width: 70em) {
