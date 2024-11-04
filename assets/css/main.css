@@ -1,0 +1,134 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+}
+body a:link {
+  color: rgb(193, 1, 1);
+}
+body a:visited {
+  color: rgb(8, 14, 128);
+}
+body a:hover {
+  color: rgb(242, 255, 0);
+}
+body a:active {
+  color: rgb(193, 1, 1);
+}
+
+#navbar {
+  background-color: rgb(140, 140, 140);
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.navbar-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-list a:hover {
+  text-decoration: underline;
+}
+
+.navbar-list a:link {
+  color: rgb(193, 1, 1);
+}
+
+.navbar-list a:visited {
+  color: rgb(8, 14, 128);
+}
+
+.navbar-list a:hover {
+  color: rgb(242, 255, 0);
+}
+
+.navbar-list a:active {
+  color: rgb(193, 1, 1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+.section-imgtxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+}
+
+.section-imgtxt-txt {
+  max-width: 1000px;
+  min-width: 500px;
+  text-align: left;
+}
+
+.section-imgtxt-img {
+  max-width: 500px;
+  min-width: 1000px;
+}
+
+@media (min-width: 70em) {
+  body {
+    font-size: 130%;
+  }
+}
+#bienvenidos {
+  color: rgb(129, 8, 8);
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 2px 3px black;
+}
+
+h2 {
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subtitulos {
+  line-height: 1;
+  text-align: center;
+  color: rgb(80, 37, 37);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.servicios {
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

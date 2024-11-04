@@ -4,6 +4,7 @@ html {
     font-weight: 300;
     font-style: normal;
 }
+$colorfondo:white;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,7 +12,7 @@ body {
     font-weight: 300;
     font-style: normal;
     margin: 0 auto;
-    background-color: white;
+    background-color: $colorfondo;
     padding: 0 20px 20px 20px;
     a:link {
         color: rgb(193, 1, 1);
@@ -44,7 +45,7 @@ padding-bottom: 5px;
 }
 
 .navbar-list a {
-    color: white;
+    color: $colorfondo;
     text-decoration: none;
 }
 
@@ -70,7 +71,7 @@ padding-bottom: 5px;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: $colorfondo;
 }
 
 .section-imgtxt{
@@ -78,7 +79,7 @@ padding-bottom: 5px;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: white;
+    background-color: $colorfondo;
 }
 
 .section-imgtxt-txt {
