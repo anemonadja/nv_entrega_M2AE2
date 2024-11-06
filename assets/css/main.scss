@@ -90,7 +90,7 @@ padding-bottom: 5px;
 }
 
 .section-imgtxt-img {
-  text-align: center;
+    text-align: center;
 
 }
 
@@ -131,4 +131,39 @@ h2 {
 .servicios {
     display: block;
     margin: 0 auto;
+}
+p {
+    font-size: 20px;
+    // line-height: $lineHeight;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.col {
+    padding-top: 20px;
+    flex: 1 0 0%;
+}
+.img-responsive {
+    width: 100%;
+}
+.card {
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+}
+.card-body {
+    padding: 0 20px;
+    min-height: 200px;
 }
