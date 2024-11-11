@@ -10,10 +10,37 @@ Este proyecto consiste en un sitio web informativo para el **Hospital Matta**, q
 4. Para visualizar el sitio, abre "index.html" en tu navegador web preferido.
 ## Estructura de carpetas y archivos
 
-/hospital Matta
-- /assets         # Imágenes, CSS y .js utilizados en el sitio web
-- /pags         # Carpeta que contiene las diferentes páginas del sitio
-- index.html    # Página del equipo médico
-- equipomedico.html    # Página del equipo médico
-- contacto.html        # Página de contacto
-- README.md         # Archivo README con las instrucciones y descripción del proyecto
+## NOTA: se creó la estructura de archivos .scss pero no logré vincularlos con @import / @use, así que por ahora quedó todo en el archivo main.scss
+
+## Listado de archivos
+
+├── README.md
+├── Requerimientos
+│   ├── 2. Evaluación M2 - Ejercicio Práctico 2.pdf
+├── pags
+│   ├── contacto.html
+│   ├── equipo-medico.html
+│   ├── index.html
+└── assets
+    ├── css
+    │   ├── main.css
+    │   └── main.scss
+    ├── img
+    │   ├── consultas.jpg
+    │   ├── equipomedico.jpg
+    │   ├── equipomedico2.jpg
+    │   ├── equipomedico3.jpg
+    │   ├── equipomedico4.jpg
+    │   ├── especialidades.jpg
+    │   ├── favicon-logo-hospital-negativo.jpg
+    │   ├── favicon-logo-hospital-positivo.jpg
+    │   ├── foto-hospital.webp
+    │   ├── Iig.logo.png
+    │   ├── logo-hospital-negativo.jpg
+    │   ├── logo-hospital-positivo.jpg
+    │   ├── testimonio_1.jpg
+    │   ├── testimonio_2.jpg
+    │   ├── urgencias.jpg
+    │   └── wapp_logo.png
+    └── js
+        └── main.js

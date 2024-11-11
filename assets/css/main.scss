@@ -1,20 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 $colorfondo:white;
 $myFont: sans-serif;
 $colorazul: #0b2b85;
 $colorrojo: #b50606;
 $myFontSize: 15px;
-
-@mixin formatoTitulos {
-    text-align: center;
-    padding: 1%;
-    color: $colorazul;
-}
-
-@mixin formatoSubTitulos {
-    text-align: center;
-    color: $colorrojo;
-    padding: 2%;
-}
 
 @media (min-width: 992px) {
     body {
@@ -27,6 +20,18 @@ $myFontSize: 15px;
     #servicios table {
         width: 100%;
     }
+}
+
+@mixin formatoTitulos {
+    text-align: center;
+    padding: 1%;
+    color: $colorazul;
+}
+
+@mixin formatoSubTitulos {
+    text-align: center;
+    color: $colorrojo;
+    padding: 2%;
 }
 
 html {
