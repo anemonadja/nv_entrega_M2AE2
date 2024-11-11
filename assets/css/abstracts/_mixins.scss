@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin formatoTitulos {
+    text-align: center;
+    padding: 1%;
+    color: $colorazul;
+}
+
+@mixin formatoSubTitulos {
+    text-align: center;
+    color: $colorrojo;
+    padding: 2%;
+}
