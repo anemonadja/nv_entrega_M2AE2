@@ -5,18 +5,55 @@
 }
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "layout/navigation";
 
 @media (min-width: 992px) {
     body {
         font-size: 16px;
     }
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
     #servicios table {
         width: 100%;
     }
+}
+
+@media (width <= 768px) {
+    .service {
+        padding: 0 10px;
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        width: 100%;
+    }
+}
+
+@media (width > 768px) {
+    .service {
+        width: 30%;
+        padding: 0 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    article.col-6 {
+        width: 45%;
+        padding: 0 10px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.m-5 {
+    padding: 50px;
+}
+
+section.testimonio-pacientes {
+    padding: 50px;
+}
+
+div.service-title {
+    padding: 50px;
 }
 
 html {
@@ -46,25 +83,7 @@ body {
 }
 
 
-#navbar {
-    background-color: $colorazul;
-    text-align: center;
-    padding: 2%;
-    .navbar:link {
-        color: $colorrojo;
-        text-decoration: none;
-    }
-    .navbar:visited {
-        color: #acacac;
-    }
-    .navbar:hover {
-        color: white;
-        text-decoration: underline;
-    }
-    .navbar:active {
-        color: $colorrojo;
-    }
-}
+
 
 .container {
     width: 100%;

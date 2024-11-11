@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+
+#navbar {
+    background-color: $colorazul;
+    text-align: center;
+    padding: 2%;
+    .navbar:link {
+        color: $colorrojo;
+        text-decoration: none;
+    }
+    .navbar:visited {
+        color: #acacac;
+    }
+    .navbar:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    .navbar:active {
+        color: $colorrojo;
+    }
+}
