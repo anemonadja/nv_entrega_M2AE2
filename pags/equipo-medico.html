@@ -1,113 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-widt, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        <link rel="icon" type="image/jpeg" href="/assets/img/hospital-icon.jpg">
-        <meta name="description" content="Sitio web de Hospital Matta">
-        <meta property="og:title" content="Hospital Matta">
-        <meta property="og:description" content="Un poco de información sobre el Hospital Matta">
-        <meta property="og:image" content="imgs/hospital-icon.jpeg">
-        <meta property="og:image:alt" content="Hospital Matta, junto a tí toda la vida.">
-        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"
-        type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpeg" href="/assets/img/favicon-logo-hospital-positivo.jpg">
+        <link rel="stylesheet" href="/assets/css/main.css">
         <title>Hospital Matta</title>
     </head>
-    <script src="/assets/js/main.js"></script>
-    <body>
-        <nav id="navbar">
-            <ul class="navbar-list">
-                <li>
-                <a href="/pags/index.html">Home</a>
-                </li>
-                <li>
-                <a href="/pags/equipo-medico.html">Equipo Médico</a>
-                </li>
-                <li>
-                <a href="/pags/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <header id="inicio" class="section-header">
-                <div>
-                    <img 
-                    width="50px"
-                    src="/assets/img/hospital-icon.jpg"
-                    alt="Un ícono de 3 cruces rojas."
-                    class="responsive-ing">
-                </div>
-                <div>
-                    <h1>Hospital Matta</h1>
-                </div>
-            </header>
 
-<!--box-->
+<body>
+
+    <header>
+
+        <Nav id="navbar">
+            <a href="/pags/index.html" id="nav.logo">
+                <img width="150" title="Logo Hospital Matta" src="/assets/img/logo-hospital-negativo.jpg" target="_blank" alt="Logo de un corazón representativo de hospital Matta">
+            </a>
+            <a href="/pags/index.html" class="navbar">Home</a>
+            <a href="/pags/equipo-medico.html" class="navbar">Equipo Médico</a>
+            <a href="/pags/contacto.html" class="navbar">Contacto</a>
+            <a href="https://youtu.be/pVz0k5AzM6A?si=VXAwl0JbRiPUONE8"
+            target="_blank" 
+            rel="noreferrer" id="navbar">
+                <button>Reservar Cita</button>
+            </a>
+        </Nav>
+
+    </header>
+
+    <main>
+
+        <section id="home.equipo-medico">
+            <h1>Nuestro Equipo</h1>
+            <p>Un breve párrafo que describa el compromiso del hospital
+            <p>Ya sea que necesite una consulta, tratamiento especializado o atención de emergencia, estamos aquí para apoyarlo en cada paso de su camino hacia una mejor salud. En el Hospital Matta, su bienestar es nuestra prioridad.</p>
+            <p><strong>Confianza, cuidado y compromiso con su salud.</strong>
+        </section>
+
         <section>
-            <div id="equipomedico" class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center">Equipo Médico</h2>
-                    </div>
-                </div>
-            </div>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th colspan="5">Equipo Médico</td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/img/equipomedico.jpg" width="150px" height="150px" alt="Dr. Juan Pérez, moreno de 40 años"></td>
+                    <td><img src="/assets/img/equipomedico2.jpg" width="150px" height="150px" alt="Dr. Juan Sánchez, moreno de 40 años con antifaz"></td>
+                    <td><img src="/assets/img/equipomedico3.jpg" width="150px" height="150px" alt="Dr. Juan Adams, moreno de 40 años con peluca y nariz de payaso"></td>
+                    <td><img src="/assets/img/equipomedico4.jpg" width="150px" height="150px" alt="Dr. Juan Anonymous, un doctor enmascarado listo para la vendetta"></td>
+                </tr>
+                <tr>
+                    <td>Dr. Juan Pérez</td>
+                    <td>Dr. Juan Sánchez</td>
+                    <td>Dr. Juan Adams</td>
+                    <td>Dr. Juan Anonimous</td>
+                </tr>
+                <tr>
+                    <td>Médico general</td>
+                    <td>Médico cirujano</td>
+                    <td>Médico pediatra</td>
+                    <td>Who knows</td>
+                </tr>
+            </table>
+        </section>
 
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="/assets/img/equipomedico.jpg" 
-                            alt="Juan Pérez, médico de mediana edad con pelo negro" 
-                            class="img-responsive">
-                        <div class="card-body">
-                            <h3>Dr. Juan Pérez</h3>
-                            <p>Médico general, especialista en todas las especialidades</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </main>
 
-            <div class="col">
-                <div class="card">
-                    <img src="/assets/img/equipomedico2.jpg" 
-                        alt="Juan Sánchez, médico de mediana edad con pelo negro y antifaz" 
-                        class="img-responsive">
-                    <div class="card-body">
-                        <h3>Dr. Juan Sánchez</h3>
-                        <p>Médico general, especialista en todas las especialidades</p>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <br>
+        <br>
+        <hr>
+        <header>
+            ¿Aún tienes dudas? Escríbenos a 
+            <a href="https://youtu.be/FqC0Yf8OjAI?si=0cXmB_lliXj_UXeh"><strong>note@matta.cl</strong></a>
+        </header>
 
-            <div class="col">
-                <div class="card">
-                    <img src="/assets/img/equipomedico3.jpg" 
-                        alt="Juan Adams, médico de mediana edad con pelo negro, nariz y peluca de payaso" 
-                        class="img-responsive">
-                    <div class="card-body">
-                        <h3>Dr. Juan Adams</h3>
-                        <p>Médico pediatra</p>
-                    </div>
-                </div>
-            </div>
-        </section>    
-
-        <footer style="text-align: center;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <div>
-                    <h4>Enlaces Rápidos</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="/pags/index.html#servicios">Servicios</a></li>
-                        <li><a href="/pags/equipo-medico.html">Equipo Médico</a></li>
-                        <li><a href="/pags/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
+        <section>
+            <ul>
+                <li><a href="/pags/index.html#servicios">Servicios</a></li>
+                <li><a href="/pags/equipo-medico.html">Equipo Médico</a></li>
+                <li><a href="https://youtu.be/T_QAxvPjjBc?si=D4rLvDRRNkL1U43Q" target="_blank">Video de presentación</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <a href="https://youtu.be/vg5LooFR8Y4?si=dB6iKlMmziSkvN1A"><img src="/assets/img/lig_logo.png" alt="Logo de Instagram" width="50px"></a>
+            <a href="https://youtu.be/DKjzu6ajPio?si=1GGAWDV-XD8hABCh"><img src="/assets/img/wapp_logo.png" alt="Logo de whatsapp" width="50px"></a>
+        </section>
+    </footer>
 </body>
 </html>

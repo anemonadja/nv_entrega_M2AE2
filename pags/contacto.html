@@ -1,121 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-widt, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        <link rel="icon" type="image/jpeg" href="/assets/img/hospital-icon.jpg">
-        <meta name="description" content="Sitio web de Hospital Matta">
-        <meta property="og:title" content="Hospital Matta">
-        <meta property="og:description" content="Un poco de información sobre el Hospital Matta">
-        <meta property="og:image" content="imgs/hospital-icon.jpeg">
-        <meta property="og:image:alt" content="Hospital Matta, junto a tí toda la vida.">
-        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"
-        type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpeg" href="/assets/img/favicon-logo-hospital-positivo.jpg">
+        <link rel="stylesheet" href="/assets/css/main.css">
         <title>Hospital Matta</title>
     </head>
-    <script src="/assets/js/main.js"></script>
-    <body>
-        <nav id="navbar">
-            <ul class="navbar-list">
-                <li>
-                <a href="/pags/index.html">Home</a>
-                </li>
-                <li>
-                <a href="/pags/equipo-medico.html">Equipo Médico</a>
-                </li>
-                <li>
-                <a href="/pags/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <header id="inicio" class="section-header">
-                <div>
-                    <img 
-                    width="50px"
-                    src="/assets/img/hospital-icon.jpg"
-                    alt="Un ícono de 3 cruces rojas."
-                    class="responsive-ing">
-                </div>
-                <div>
-                    <h1>Hospital Matta</h1>
-                </div>
-            </header>
+<body>
+
+    <header>
+
+        <Nav id="navbar">
+            <a href="/pags/index.html" id="nav.logo">
+                <img width="150" title="Logo Hospital Matta" src="/assets/img/logo-hospital-negativo.jpg" target="_blank" alt="Logo de un corazón representativo de hospital Matta">
+            </a>
+            <a href="/pags/index.html" class="navbar">Home</a>
+            <a href="/pags/equipo-medico.html" class="navbar">Equipo Médico</a>
+            <a href="/pags/contacto.html" class="navbar">Contacto</a>
+            <a href="https://youtu.be/pVz0k5AzM6A?si=VXAwl0JbRiPUONE8"
+            target="_blank" 
+            rel="noreferrer" id="navbar">
+                <button>Reservar Cita</button>
+            </a>
+        </Nav>
+
+    </header>
+
+    <main>
+
         <section>
-            <article>
-                <h2 id="contacto">Formulario de contacto</h2>
-                <form method="post" action="/">
-                    <fieldset>
-                        <legend>Información personal</legend>
-                        <div>
-                            <label>Nombre:
-                                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
-                            </label>
-                        </div>
-                        <div>
-                            <label>Email:
-                                <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Información Adicional</legend>
-                            <label>Teléfono:
-                                <input type="tel" id="phone" name="email" placeholder="+56988888888" required pattern="[0-9]{9}">
-                            </label>
-                    </fieldset>
-                    <fieldset>
-                    <legend>Otros</legend>
-                        <div>
-                            <label for="terms">¿Aceptas los términos?</label>
-                            <input type="checkbox" id="terms" name="terms" required>
-                        </div>
-                        <div>
-                            <label>Asunto:
-                                <input list="text" name="text">
-                            </label>
-                        </div>
-                        <div>
-                            <label>Mensaje:
-                                <input list="text" name="text">
-                            </label>
-                        </div>
-                    </fieldset>
-                    <button>Enviar contacto></button>
+
+            <header><h1>Contáctanos</h1></header>
+            <main>
+                <form action="" method="post">
+                <section>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                </section>
+                <br>
+                <section>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Escribe tu email" required>
+                </section>
+                <br>
+                <section>
+                    <label for="nombre">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Escribe el asunto">
+                </section>
+                <br>
+                <section>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje" wrap="soft" cols="40" rows="5" minlength="15" maxlength="100"></textarea>
+                </section>
                 </form>
-            </article>
+            </main>
+        
         </section>
+
         <Section>
+
             <header>
-                    <h3>Mapa de Ubicación:</h3>
+                <h2>Mapa de Ubicación:</h2>
+                <h4>Encuéntranos en Santiago Centro</h4>
             </header>
-                <p>Encuéntranos en Santiago Centro</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5490883833854!2d-70.64178679999998!3d-33.4610524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c52befb3a815%3A0x98576c8ccdfdd188!2sHospital%20San%20Borja%20Arriar%C3%A1n!5e0!3m2!1ses!2scl!4v1730137939183!5m2!1ses!2scl" 
-                    width="800" 
-                    height="200" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade" alt="mapa de ubicación en barrio Matta, por calle santa rosa 1234, santiago"
-                ></iframe>
+
+            <main>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5490883833854!2d-70.64178679999998!3d-33.4610524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c52befb3a815%3A0x98576c8ccdfdd188!2sHospital%20San%20Borja%20Arriar%C3%A1n!5e0!3m2!1ses!2scl!4v1730137939183!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="mapa de ubicación en barrio Matta, por calle santa rosa 1234, santiago"></iframe>    
+            </main>
+
         </Section>
+
+    </main>
+
+    <footer>
+        <br>
+        <br>
         <hr>
-        <footer style="text-align: center;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <div>
-                    <h4>Enlaces Rápidos</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="/pags/index.html#servicios">Servicios</a></li>
-                        <li><a href="/pags/equipo-medico.html">Equipo Médico</a></li>
-                        <li><a href="/pags/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </body>
+        <header>
+            ¿Aún tienes dudas? Escríbenos a 
+            <a href="https://youtu.be/FqC0Yf8OjAI?si=0cXmB_lliXj_UXeh"><strong>note@matta.cl</strong></a>
+        </header>
+
+        <section>
+            <ul>
+                <li><a href="/pags/index.html#servicios">Servicios</a></li>
+                <li><a href="/pags/equipo-medico.html">Equipo Médico</a></li>
+                <li><a href="https://youtu.be/T_QAxvPjjBc?si=D4rLvDRRNkL1U43Q" target="_blank">Video de presentación</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <a href="https://youtu.be/vg5LooFR8Y4?si=dB6iKlMmziSkvN1A"><img src="/assets/img/lig_logo.png" alt="Logo de Instagram" width="50px"></a>
+            <a href="https://youtu.be/DKjzu6ajPio?si=1GGAWDV-XD8hABCh"><img src="/assets/img/wapp_logo.png" alt="Logo de whatsapp" width="50px"></a>
+        </section>
+    </footer>
+
+</body>
 </html>

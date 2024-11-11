@@ -1,7 +1,33 @@
 $colorfondo:white;
-$myFont: 'Roboto', sans-serif;
-$myColor: red;
+$myFont: sans-serif;
+$colorazul: #0b2b85;
+$colorrojo: #b50606;
 $myFontSize: 15px;
+
+@mixin formatoTitulos {
+    text-align: center;
+    padding: 1%;
+    color: $colorazul;
+}
+
+@mixin formatoSubTitulos {
+    text-align: center;
+    color: $colorrojo;
+    padding: 2%;
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    #servicios table {
+        width: 100%;
+    }
+}
 
 html {
     font-family: $myFont;
@@ -10,160 +36,72 @@ html {
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0 auto;
-    background-color: $colorfondo;
-    padding: 0 20px 20px 20px;
-    a:link {
-        color: rgb(193, 1, 1);
+    header {
+        padding: 0px 0px 5px 0px;
+    }
+    main {
+        font-family: sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 0 auto;
+        background-color: $colorfondo;
+        padding: 5%;
+        h1 {
+            @include formatoTitulos();
         }
-    a:visited {
-        color: rgb(8, 14, 128);
+        p {
+            padding-left: 30px;
         }
-    a:hover {
-        color: rgb(242, 255, 0);
-        }
-    a:active {
-        color: rgb(193, 1, 1);
-        }
-    
+    }
 }
+
 
 #navbar {
-    background-color: rgb(140, 140, 140);
+    background-color: $colorazul;
     text-align: center;
-    color: white;
-    padding-top: 5px;
-padding-bottom: 5px;
+    padding: 2%;
+    .navbar:link {
+        color: $colorrojo;
+        text-decoration: none;
     }
-
-.navbar-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.navbar-list a {
-    color: $colorfondo;
-    text-decoration: none;
-}
-
-.navbar-list a:hover {
-    text-decoration: underline;
-}
-
-.navbar-list a:link {
-    color: rgb(193, 1, 1);
-}
-.navbar-list a:visited {
-    color: rgb(8, 14, 128);
-}
-.navbar-list a:hover {
-    color: rgb(242, 255, 0);
-}
-.navbar-list a:active {
-    color: rgb(193, 1, 1);
-}
-
-.section-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background-color: $colorfondo;
-}
-
-.section-imgtxt{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: $colorfondo;
-}
-
-.section-imgtxt-txt {
-    text-align: left;
-}
-
-.section-imgtxt-img {
-    text-align: center;
-
-}
-
-@media (min-width: 70em) {
-    body {
-        font-size: 130%;
+    .navbar:visited {
+        color: #acacac;
+    }
+    .navbar:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    .navbar:active {
+        color: $colorrojo;
     }
 }
 
-#bienvenidos {
-    color: rgb(129, 8, 8);
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    font-style: normal;
-    text-shadow: 1px 2px 3px black;
-}
-
-h2 {
-    line-height: 2;
-    letter-spacing: 1px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.subtitulos {
-    line-height: 1;
-    text-align: center;
-    color: rgb(80, 37, 37);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-}
-.servicios {
-    display: block;
-    margin: 0 auto;
-}
-p {
-    font-size: 20px;
-    // line-height: $lineHeight;
-}
-.text-center {
-    text-align: center;
-}
 .container {
-    max-width: 1320px;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    align-content: center;
+    section {
+        float: left;
+        width: 70%;
+        height: 400px;
+        background-color: #0c1f547d;
+        align-content: center;
+        .textobienvenida {
+            padding-left: 30px;
+        }
+    }
+    aside {
+        float: left;
+        width: 30%;
+        height: 400px;
+        padding-top: 3%;
+    }
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+
+.servicios {
+    float: center;
 }
-.col {
-    padding-top: 20px;
-    flex: 1 0 0%;
-}
-.img-responsive {
-    width: 100%;
-}
-.card {
-    border: 1px solid #d2d2d2;
-    border-radius: 10px;
-}
-.card-body {
-    padding: 0 20px;
-    min-height: 200px;
+
+.subtitulos.cajas {
+    @include formatoSubTitulos()
 }
